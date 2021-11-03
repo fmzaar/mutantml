@@ -1,4 +1,4 @@
-package com.example.Mutant.repositories;
+package com.example.Mutant.services;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -7,6 +7,7 @@ import java.util.List;
 
 import javax.persistence.EntityManager;
 
+import com.example.Mutant.repositories.MutantRepository;
 import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
@@ -21,7 +22,7 @@ public class MutantRepositoryTest {
 	
 	
 	@Autowired
-	 MutantRepository mutantRepository;
+	MutantRepository mutantRepository;
 	
 	@Autowired
 	private EntityManager em;
